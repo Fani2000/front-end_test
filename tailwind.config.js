@@ -9,8 +9,8 @@ export default {
       secondary: "#D100C9",
     },
     extend: {
-      backgroundImage: {
-        hero: "linear-gradient(to right bottom, rgba(0,0,0, 0.6), transparent), url('./src/assets/images/hero.png')",
+      fontFamily: {
+        inter: ["Inter"],
       },
     },
   },

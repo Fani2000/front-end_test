@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import Separator from "./Seperator";
-import Olympian from "../assets/images/olympian.png";
-import Savings from "../assets/images/savings.png";
-import Skhokho from "../assets/images/skhokho.png";
+import Olympian from "../../assets/images/olympian.png";
+import Savings from "../../assets/images/savings.png";
+import Skhokho from "../../assets/images/skhokho.png";
 
 const initialState = [
   {

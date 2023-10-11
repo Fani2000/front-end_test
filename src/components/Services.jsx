@@ -1,8 +1,8 @@
 import Separator from "./Seperator";
-import appDev from "../assets/images/appDev.svg";
-import webDev from "../assets/images/webDev.svg";
-import uxIcon from "../assets/images/UxIcon.svg";
-import blockChainIcon from "../assets/images/blockchain.svg";
+import appDev from "../../assets/images/appDev.svg";
+import webDev from "../../assets/images/webDev.svg";
+import uxIcon from "../../assets/images/UxIcon.svg";
+import blockChainIcon from "../../assets/images/blockchain.svg";
 
 const initialState = [
   {

@@ -1,8 +1,6 @@
-import hero from "../assets/images/hero.png";
-
 const Hero = () => {
   return (
-    <div className="h-[50vh] relative bg-hero bg-no-repeat bg-cover bg-center">
+    <div className="h-[50vh] relative hero bg-no-repeat bg-cover bg-center">
       <div className="bottom-28 absolute flex flex-col w-[450px] gap-y-6 left-10 h-[120px] text-white">
         <div className="text-4xl font-bold">Live with Confidence</div>
         <div className="max-w-sm">

@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex justify-between gap-x-2 gap-y-6 flex-wrap">
+      <div className="flex justify-between mt-10 gap-x-2 gap-y-6 flex-wrap">
         <div className="flex flex-col w-36">
           <div className="hover:underline cursor-pointer">Terms of service</div>
           <div className="hover:underline cursor-pointer">Privacy policy</div>

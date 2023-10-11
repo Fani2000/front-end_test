@@ -1,10 +1,10 @@
-import React from "react";
+import logo from "../../assets/brand/logo.svg";
 
 const Navbar = () => {
   return (
     <div className="bg-primary px-16 items-center flex flex-col md:flex-row xs:flex-col justify-between md:h-[60px] ">
       <a href="#">
-        <img src="src/assets/brand/logo.svg" />
+        <img src={logo} />
       </a>
       <div className="flex gap-6 font-bold text-white text-sm">
         <span className="hover:text-secondary cursor-pointer">Services</span>

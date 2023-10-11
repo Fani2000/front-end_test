@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 
 const HomeLayout = () => {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden font-inter">
       <Navbar />
       <Hero />
       <Services />
