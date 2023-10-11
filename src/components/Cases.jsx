@@ -41,7 +41,7 @@ const Cases = () => {
   }, []);
 
   return (
-    <div className="px-12 py-10 flex flex-col gap-8">
+    <div id="cases" className="px-12 py-10 flex flex-col gap-8">
       <div className="flex text-xl gap-x-4 items-center">
         <Separator />
         <div>Case Studies</div>

@@ -1,4 +1,5 @@
 import logo from "../../assets/brand/logo.svg";
+import { useCustomNavigate } from "../hooks/useCustomNavigate";
 
 const HorizontalMenu = () => {
   return (
@@ -10,10 +11,30 @@ const HorizontalMenu = () => {
       </a>
 
       <div className="gap-6 font-bold text-white text-sm flex flex-col md:flex-row">
-        <span className="hover:text-secondary cursor-pointer">Services</span>
-        <span className="hover:text-secondary cursor-pointer">Industries</span>
-        <span className="hover:text-secondary cursor-pointer">Cases</span>
-        <span className="hover:text-secondary cursor-pointer">Contact</span>
+        <span
+          onClick={() => useCustomNavigate("services")}
+          className="hover:text-secondary cursor-pointer"
+        >
+          Services
+        </span>
+        <span
+          onClick={() => useCustomNavigate("cases")}
+          className="hover:text-secondary cursor-pointer"
+        >
+          Industries
+        </span>
+        <span
+          onClick={() => useCustomNavigate("cases")}
+          className="hover:text-secondary cursor-pointer"
+        >
+          Cases
+        </span>
+        <span
+          onClick={() => useCustomNavigate("contact")}
+          className="hover:text-secondary cursor-pointer"
+        >
+          Contact
+        </span>
       </div>
       <div className="rounded-full hidden  p-2 px-6 bg-white text-primary font-bold text-sm md:flex">
         Let's Talk

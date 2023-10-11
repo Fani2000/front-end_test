@@ -31,11 +31,31 @@ const Sidebar = () => {
         <Close />
       </div>
 
-      <div className="gap-6 font-bold text-white text-sm flex flex-col md:flex-row mt-6">
-        <span className="hover:text-secondary cursor-pointer">Services</span>
-        <span className="hover:text-secondary cursor-pointer">Industries</span>
-        <span className="hover:text-secondary cursor-pointer">Cases</span>
-        <span className="hover:text-secondary cursor-pointer">Contact</span>
+      <div className="gap-6 font-bold text-white text-sm flex flex-col md:flex-row">
+        <span
+          onClick={() => useCustomNavigate("services")}
+          className="hover:text-secondary cursor-pointer"
+        >
+          Services
+        </span>
+        <span
+          onClick={() => useCustomNavigate("cases")}
+          className="hover:text-secondary cursor-pointer"
+        >
+          Industries
+        </span>
+        <span
+          onClick={() => useCustomNavigate("cases")}
+          className="hover:text-secondary cursor-pointer"
+        >
+          Cases
+        </span>
+        <span
+          onClick={() => useCustomNavigate("contact")}
+          className="hover:text-secondary cursor-pointer"
+        >
+          Contact
+        </span>
       </div>
       <div className="rounded-full w-1/2 mt-10 mx-auto  p-2 px-6 bg-white text-primary font-bold text-sm md:flex">
         Let's Talk

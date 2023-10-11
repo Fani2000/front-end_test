@@ -33,7 +33,7 @@ const initialState = [
 
 const Services = () => {
   return (
-    <div className="px-12 py-14 flex flex-col gap-8">
+    <div id="services" className="px-12 py-14 flex flex-col gap-8">
       <div className="flex text-xl gap-x-4 items-center">
         <Separator />
         <div>What we Do</div>

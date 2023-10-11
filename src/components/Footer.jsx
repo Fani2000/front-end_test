@@ -10,7 +10,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className="p-10 text-white flex flex-col gap-6 pb-10 bg-primaryDark">
+    <div id="contact" className="p-10 text-white flex flex-col gap-6 pb-10 bg-primaryDark">
       <div className="flex items-center gap-4">
         <Separator />
         <div className="text-sm">Contact Us</div>
