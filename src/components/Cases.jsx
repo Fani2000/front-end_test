@@ -72,7 +72,7 @@ const Cases = () => {
       <div className="w-full">
         <div
           ref={sliderRef}
-          className="w-full flex flex-row gap-x-6 overflow-x-scroll snap-x snap-mandatory"
+          className="w-full rounded-2xl flex flex-row gap-x-6 overflow-x-scroll snap-x snap-mandatory"
           style={{
             paddingBottom: "15px",
             clipPath: "inset(0 0 15px 0)",

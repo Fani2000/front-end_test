@@ -38,14 +38,14 @@ const Services = () => {
         <Separator />
         <div>What we Do</div>
       </div>
-      <div className="text-4xl font-semibold">
+      <div className="md:text-4xl sm:text-2xl max-w-[900px] font-semibold">
         We offer a complete range of bespoke design and development services to
         help you turn your iea into digital masterpieces
       </div>
-      <div className="flex items-center flex-wrap justify-between">
+      <div className="flex items-center flex-wrap gap-10 justify-between">
         {initialState.map((service, i) => {
           return (
-            <div key={i} className="w-[200px] flex flex-col gap-8">
+            <div key={i} className="sm:w-[250px] md:w-[200px] flex flex-col gap-8">
               <img src={service.icon} width={40} height={40} />
               <div className="font-bold text-md">{service.title}</div>
               <div className="">{service.details}</div>

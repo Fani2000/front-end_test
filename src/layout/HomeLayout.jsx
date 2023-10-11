@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import Services from "../components/Services";
 import Cases from "../components/Cases";
 import Brands from "../components/Brands";
+import Footer from "../components/Footer";
 
 const HomeLayout = () => {
   return (
@@ -13,6 +14,7 @@ const HomeLayout = () => {
       <Services />
       <Cases />
       <Brands />
+      <Footer />
     </div>
   );
 };

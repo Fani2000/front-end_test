@@ -5,6 +5,8 @@ export default {
     colors: {
       primary: "#70259B",
       white: "#FFFFFF",
+      primaryDark: "#430964",
+      secondary: "#D100C9",
     },
     extend: {
       backgroundImage: {
