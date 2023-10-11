@@ -6,7 +6,7 @@ const Navbar = () => {
       <a href="#">
         <img className="" src="src/assets/brand/logo.svg" />
       </a>
-      <div className="flex gap-6 text-lg font-bold text-white">
+      <div className="flex gap-6 font-bold text-white">
         <span>Services</span>
         <span>Industries</span>
         <span>Cases</span>
