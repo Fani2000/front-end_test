@@ -2,7 +2,7 @@
 
 ## The Deployed Version of the app
 
-URL: [Front End Test](https://6527cf9b33c8ed2b164437e9--jocular-hummingbird-da14ef.netlify.app/)
+URL: [Front End Test](https://6527d47ab31d0c03ae059555--earnest-meerkat-5bfd0b.netlify.app/)
 
 ## Projects Screenshots
 
