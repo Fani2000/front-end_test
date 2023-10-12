@@ -1,13 +1,12 @@
 import { useState, useRef, useEffect } from "react";
 import Separator from "./Seperator";
 import { useSelector } from "react-redux";
+import Carousel from "./Carousel";
 
 const Cases = () => {
   const carouselData = useSelector((state) => state.global.carouselData);
-
   // prettier-ignore
   const indicatorWidthPercent = carouselData.length > 0 ? 100 / carouselData.length : 100;
-
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const sliderRef = useRef(null);
 
@@ -49,26 +48,13 @@ const Cases = () => {
       <div className="w-full">
         <div
           ref={sliderRef}
-          className="w-full scroll rounded-2xl flex flex-row gap-x-6 overflow-x-scroll snap-x snap-mandatory scroll-m-2"
+          className="w-full rounded-2xl flex flex-row gap-x-6 snap-x snap-mandatory"
           style={{
             paddingBottom: "15px",
+            clipPath: "inset(0 0 15px 0)",
           }}
         >
-          {carouselData.map((c, i) => {
-            return (
-              <div
-                key={i}
-                className="flex-shrink-0 snap-start relative rounded-full"
-              >
-                <img src={c.imageUrl} className="rounded-2xl" width={400} />
-                <div className="absolute text-white bottom-5 left-10 flex flex-col gap-2">
-                  <Separator />
-                  <div className="text-2xl font-bold">{c.title}</div>
-                  <div className="w-[300px]">{c.description}</div>
-                </div>
-              </div>
-            );
-          })}
+          <Carousel cases={carouselData} />
         </div>
       </div>
     </div>

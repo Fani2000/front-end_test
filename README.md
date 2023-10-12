@@ -1,7 +1,8 @@
 # FRONT END TEST
 
-## Here is the link to run the project
-URL: [Front End Test](https://www.placeholder.com)
+## The Deployed Version of the app
+
+URL: [Front End Test](https://6527c669e5455623a868161b--reliable-biscochitos-33fdb5.netlify.app/)
 
 ## Projects Screenshots
 
