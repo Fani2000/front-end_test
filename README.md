@@ -23,7 +23,7 @@ URL: [Front End Test](https://6527cf9b33c8ed2b164437e9--jocular-hummingbird-da14
 
 1. Firstly Pull the code
 
-**RUN `git clone https://github.com/Fani2000/front-end_test.git`**
+**RUN `git clone https://github.com/Fani2000/front-end_test.git && cd front-end_test`**
 
 2. Secondly, You have to install the dependencies
 
