@@ -33,7 +33,7 @@ const Sidebar = () => {
         <Close />
       </div>
 
-      <div className="gap-6 font-bold text-white text-sm flex flex-col md:flex-row">
+      <div className="gap-6 mt-10 font-bold text-white text-sm flex flex-col md:flex-row">
         <span
           onClick={() => useCustomNavigate("services")}
           className="hover:text-secondary cursor-pointer"

@@ -22,6 +22,8 @@ URL: [Front End Test](https://www.placeholder.com)
 
 ### Here are some of the architectural designs
 
+
+
 #### Improvements That could be done.
 
 - **_Adding services workers to cache assets,files,etc_**
