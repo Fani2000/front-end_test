@@ -9,8 +9,9 @@ const fetchCarouselData = async () => {
   console.log("CAROUSEL WORKER STARTED🎊🎊🎊");
 
   const items = await grudCarouselModule.database.carousel.toArray();
+  console.log(items.length)
 
-  if (items.length > 0) {
+  if (items.length === 0) {
     try {
       const res = await fetch(url);
       console.log(res)
