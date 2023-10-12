@@ -49,10 +49,9 @@ const Cases = () => {
       <div className="w-full">
         <div
           ref={sliderRef}
-          className="w-full rounded-2xl flex flex-row gap-x-6 overflow-x-scroll snap-x snap-mandatory"
+          className="w-full scroll rounded-2xl flex flex-row gap-x-6 overflow-x-scroll snap-x snap-mandatory scroll-m-2"
           style={{
             paddingBottom: "15px",
-            clipPath: "inset(0 0 15px 0)",
           }}
         >
           {carouselData.map((c, i) => {
@@ -70,17 +69,6 @@ const Cases = () => {
               </div>
             );
           })}
-        </div>
-
-        <div className="w-full h-0.5 relative bg-gray-300">
-          <div
-            className="h-0.5 absolute top-0 left-0 bg-gray-500"
-            style={{
-              width: `${indicatorWidthPercent}%`,
-              left: `${indicatorWidthPercent * currentSlideIndex}%`,
-              transition: "left 150ms ease-in-out",
-            }}
-          />
         </div>
       </div>
     </div>

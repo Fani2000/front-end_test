@@ -1,6 +1,8 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+
 import { toggleMobileMenu } from "../slices/globalSlice";
+
 import { Close } from "@mui/icons-material";
 
 import logo from "../../assets/brand/logo.svg";

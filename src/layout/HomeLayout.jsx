@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
@@ -8,26 +9,33 @@ import Footer from "../components/Footer";
 
 import { Menu } from "@mui/icons-material";
 import { Avatar } from "@mui/material";
-import { useDispatch } from "react-redux";
-import { toggleMobileMenu, updateCarouselData } from "../slices/globalSlice";
 
-const url =
-  "https://zm6zxgq6hyhe3smi5krzsrk2fu0iidhh.lambda-url.us-east-1.on.aws/";
+import { useDispatch } from "react-redux";
+
+import { toggleMobileMenu, updateCarouselData } from "../slices/globalSlice";
+import { GrudCarouselModule } from "../modules/mod_carousel";
+import { useLiveQuery } from "dexie-react-hooks";
+import { db } from "../collections";
+
+const grudCarouselModule = new GrudCarouselModule();
 
 const HomeLayout = () => {
+  const carouselData = useLiveQuery(() => db.carousel.toArray());
   const dispatch = useDispatch();
 
+  const worker = new Worker(
+    new URL("../workers/carousel.worker.js", import.meta.url),
+    { type: "module" }
+  );
+
+  worker.onmessage = (data) => {
+    console.log(data);
+  };
+
   useEffect(() => {
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => {
-        dispatch(updateCarouselData(data));
-      })
-      .catch((err) => {
-        console.log("ERROR: ", err);
-        // TODO: Put the error capturing system
-      });
-  });
+    console.log("DATA: ", carouselData?.length);
+    if (carouselData?.length > 0) dispatch(updateCarouselData(carouselData));
+  }, [carouselData]);
 
   const handleOpenMenu = () => {
     dispatch(toggleMobileMenu());
