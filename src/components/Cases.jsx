@@ -45,10 +45,10 @@ const Cases = () => {
         <Separator />
         <div>Case Studies</div>
       </div>
-      <div className="w-full">
+      <div className="w-full flex justify-center items-center">
         <div
           ref={sliderRef}
-          className="w-full rounded-2xl flex flex-row gap-x-6 snap-x snap-mandatory"
+          className=" rounded-2xl flex flex-row gap-x-6 snap-x snap-mandatory"
           style={{
             paddingBottom: "15px",
             clipPath: "inset(0 0 15px 0)",

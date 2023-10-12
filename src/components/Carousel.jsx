@@ -20,8 +20,8 @@ const Carousel = ({ cases }) => {
   };
 
   return (
-    <div className="carousel">
-      <div className="flex-shrink-0 snap-start relative rounded-full">
+    <div className="carousel w-[70vw]">
+      <div className="flex-shrink-0 snap-start w-full relative rounded-full">
         <div className="absolute slide_direction top-1/2 text-white w-full flex justify-between px-10">
           <div className="left cursor-pointer">
             <svg
